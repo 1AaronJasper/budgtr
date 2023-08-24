@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="/css/skeleton.css">
+    <title> Budgtr</title>
+</head>
+<body>
+    <div class="container">
+        <h1> <%= budget.name %> </h1>
+        <h5>Date: <%= budget.date %></h5>
+        <h5>From: <%= budget.from %></h5>
+        <h5>Amount: <%= budget.amount %></h5>
+        <h5>Tags: <%= budget.tags.join(', ') %></h5> 
+        
+        <a href="/budgets"><button>BACK</button></a>
+    </div>
+</body>
+</html>

@@ -5,11 +5,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="stylesheet" href="/normalize.css">
     <link rel="stylesheet" href="/skeleton.css">
-    <title>Document</title>
+    <title>Budgtr</title>
 </head>
 <body>
     <div class="container">
+
         <h1>Budgtr ALL</h1>
+
+        <table>
+            <% budget.forEach((budget, i) => { %>
+            <tr>
+                <td><%= budget.date %></td>
+                <td><a href="/budgets/<%= i %>"><%= budget.name %></a></td>
+                <td><%= budget.amount %></td>
+            </tr>
+            <% }); %>
+        </table>
+
+        <a href="/budgets/new"><button>New Budget</button></a>
     </div>
 </body>
 </html>

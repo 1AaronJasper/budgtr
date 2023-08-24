@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="/normalize.css">
+    <link rel="stylesheet" href="/skeleton.css">
+    <title>Budgtr</title>
+</head>
+<body>
+     <div class="container">
+
+        <h1>
+            Add a New Budget Item
+        </h1>
+
+        <form method="POST" action="/budgets">
+            <label for="date">Date:</label>
+            <input type="text" name="date" required>
+          
+            <label for="name">Name:</label>
+            <input type="text" name="name" required>
+          
+            <label for="from">From:</label>
+            <input type="text" name="from" required>
+          
+            <label for="amount">Amount:</label>
+            <input type="text" name="amount" required>
+          
+            <label for="tags">Tags (comma-separated):</label>
+            <input type="text" name="tags" required>
+          
+            <button type="submit">Add Budget</button>
+          </form>
+          
+
+        <a href="/"><button> BACK</button> </a><br>
+
+    </div>
+</body>
+</html>
