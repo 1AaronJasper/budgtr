@@ -17,5 +17,8 @@ app.get('/', (req, res) => {
     res.send("hello world");
 })
 
+app.get("/index", (req, res) => {
+    res.render("index.ejs");
+})
 
 app.listen(PORT, () => {console.log("this here is a port!")});
